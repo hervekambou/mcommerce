@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.clientui</groupId>
-	<artifactId>client-ui</artifactId>
+	<artifactId>clientui</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>client-ui</name>
 	<description>Client UI pour les micro services mcommerce</description>
