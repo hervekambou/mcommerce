@@ -15,13 +15,12 @@ import java.util.List;
 public class ClientController {
 
     @Autowired
-    private MicroserviceProduitsProxy produitsProxy;
+    private MicroserviceProduitsProxy mProduitsProxy;
 
     @RequestMapping("/")
     public String accueil(Model model){
 
-        List<ProductBean> produits =  produitsProxy.listeDesProduits();
-
+        List<ProductBean> produits =  mProduitsProxy.listeDesProduits();
         model.addAttribute("produits", produits);
 
         return "Accueil";
@@ -30,8 +29,7 @@ public class ClientController {
     @RequestMapping("/details-produit/{id}")
     public String ficheProduit(@PathVariable int id, Model model){
 
-        ProductBean produit = produitsProxy.recupererUnProduit(id);
-
+        ProductBean produit = mProduitsProxy.recupererUnProduit(id);
         model.addAttribute("produit", produit);
 
         return "FicheProduit";

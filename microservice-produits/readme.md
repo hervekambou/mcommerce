@@ -1,1 +1,1 @@
-Contenu
+web services et Models avec Swagger: http://localhost:9001/v2/api-docs http://localhost:9001/swagger-ui.html
